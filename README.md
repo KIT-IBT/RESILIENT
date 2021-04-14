@@ -14,7 +14,9 @@ To install and run RESILIENT, you need:
 - Tetgen (https://www.tetgen.org)
 
 Install these using your package manager (apt, homebrew, macports...) or download the source code directly. 
+
 When compiling cork from source, make sure to give the correct paths to gmp in the "makeConstants" file.
+
 The standard path where we look for cork is a subfolder "cork" here. For tetgen, it's "tetgen1.6.0".
 
 
@@ -85,6 +87,7 @@ FindAndMarkSeedPoints: Mark the localization of the seedpoint in the mesh by usi
 
 ## Citation
 When using this program, please cite
+
 <a id="1">[1]</a> [Andreas Wachter, Axel Loewe, Martin W. Krueger, Olaf Dössel and Gunnar Seemann. "Mesh structure-independent modeling of patient-specific atrial fiber orientation". Current Directions in Biomedical Engineering, 2015, 1(1), 409-412.](https://doi.org/10.1515/cdbme-2015-0099)  
 
 ### Bibtex
@@ -107,4 +110,6 @@ Andreas Wachter, Luca Azzolin, Axel Loewe
 
 Institute of Biomedical Engineering, Karlsruhe Institute of Technology (KIT)
 
-www.ibt.kit.edu <publications@ibt.kit.edu>
+www.ibt.kit.edu 
+
+<publications@ibt.kit.edu>

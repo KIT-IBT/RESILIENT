@@ -2,7 +2,7 @@
 A RulE baSed atrIaL fIber gENeraTor.
 
 ## Overview
-RESILIENT is a rule-based artial fiber generator for generating bi-atrial fibers and interatrial bridges. The algortihm was developed at IBT and published in Wachter et al. 2015 (see below). The algrothim works with triangle, terahedron and voxel meshes. The fibers are based on 22 seedpoints: 9 in the right atrium and 13 in the left atrium. They have to be selected by the user as described in Wachter et al.
+RESILIENT is a rule-based artial fiber generator for generating bi-atrial fibers and interatrial bridges. The algortihm was developed at IBT and published in Wachter et al. 2015 [[1](#1)]. The algrothim works with triangle, terahedron and voxel meshes. The fibers are based on 22 seedpoints: 9 in the right atrium and 13 in the left atrium. They have to be selected by the user as described in [[1](#1)].
 
 ![localization of the seedpoints](https://user-images.githubusercontent.com/70153727/114750043-d701d500-9d53-11eb-9d02-7608baddf1b3.jpg)
 
@@ -85,7 +85,7 @@ FindAndMarkSeedPoints: Mark the localization of the seedpoint in the mesh by usi
 
 ## Citation
 When using this program, please cite
-Andreas Wachter, Axel Loewe, Martin W. Krueger, Olaf Dössel and Gunnar Seemann. "Mesh structure-independent modeling of patient-specific atrial fiber orientation". Current Directions in Biomedical Engineering, 2015, 1(1), 409-412.](https://doi.org/10.1515/cdbme-2015-0099)  
+<a id="1">[1]</a> [Andreas Wachter, Axel Loewe, Martin W. Krueger, Olaf Dössel and Gunnar Seemann. "Mesh structure-independent modeling of patient-specific atrial fiber orientation". Current Directions in Biomedical Engineering, 2015, 1(1), 409-412.](https://doi.org/10.1515/cdbme-2015-0099)  
 
 ### Bibtex
 ```
@@ -104,7 +104,7 @@ pages = {409--412}
 
 ## Contact 
 Andreas Wachter, Luca Azzolin, Axel Loewe
-Institute of Biomedical Engineering
-Karlsruhe Institute of Technology (KIT)
-www.ibt.kit.edu
-publications@ibt.kit.edu
+
+Institute of Biomedical Engineering, Karlsruhe Institute of Technology (KIT)
+
+www.ibt.kit.edu <publications@ibt.kit.edu>

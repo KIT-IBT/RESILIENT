@@ -2,26 +2,30 @@
 A RulE baSed atrIaL fIber gENeraTor.
 
 ## Overview
-RESILIENT is a rule-based artial fiber generator for generating bi-atrial fibers and interatrial bridges. The algortihm was developed at IBT and published under [[1](#1)]. The algrothim works with surface, terahedron  and voxel meshes. The fibers based on 22 seedpoint, 9 in the right atrium and 13 in the left atrium. They have to be selected by the user according to [[1](#1)].
+RESILIENT is a rule-based artial fiber generator for generating bi-atrial fibers and interatrial bridges. The algortihm was developed at IBT and published in Wachter et al. 2015 (see below). The algrothim works with triangle, terahedron and voxel meshes. The fibers are based on 22 seedpoints: 9 in the right atrium and 13 in the left atrium. They have to be selected by the user as described in Wachter et al.
 
 ![localization of the seedpoints](https://user-images.githubusercontent.com/70153727/114750043-d701d500-9d53-11eb-9d02-7608baddf1b3.jpg)
 
-## Requirements
-To install and run RESILIENT you need:
+## Dependencies
+To install and run RESILIENT, you need:
+- VTK (https://gitlab.kitware.com/vtk/vtk)
+- GMP (https://gmplib.org)
+- Cork (https://github.com/gilbo/cork)
+- Tetgen (https://www.tetgen.org)
 
-- VTK (https://gitlab.kitware.com/vtk/vtk),
-- Cork (https://github.com/gilbo/cork), 
-- Tetgen (https://github.com/pyvista/tetgen),
-- GMP (https://gmplib.org) ???
+Install these using your package manager (apt, homebrew, macports...) or download the source code directly. 
+When compiling cork from source, make sure to give the correct paths to gmp in the "makeConstants" file.
+The standard path where we look for cork is a subfolder "cork" here. For tetgen, it's "tetgen1.6.0".
 
 
 ## Install
+We use CMake to configure the build process. If your dependencies are in non-standard locations, you might need to pass these paths to CMake.
 ```
 git clone https://github.com/KIT-IBT/RESILIENT.git
-cd Resilient
-
+cd RESILIENT
 cmake .
-make install
+make
+sudo make install
 ```
 ## Run
 
@@ -79,12 +83,9 @@ FindAndMarkSeedPoints: Mark the localization of the seedpoint in the mesh by usi
 
 ## Debug
 
-## License
-All source code is subject to the terms of the GNU General Public License v3.0.
-Copyright 2020 Andreas Wachter, Luca Azzolin Karlsruhe Institute of Technology.
-
 ## Citation
-<a id="1">[1]</a> [Wachter, A. et al., 2015. Mesh structure-independent modeling of patient-specific atrial fiber orientation. Current Directions in Biomedical Engineering, 1(1), 409-412.](https://doi.org/10.1515/cdbme-2015-0099)  
+When using this program, please cite
+Andreas Wachter, Axel Loewe, Martin W. Krueger, Olaf Dössel and Gunnar Seemann. "Mesh structure-independent modeling of patient-specific atrial fiber orientation". Current Directions in Biomedical Engineering, 2015, 1(1), 409-412.](https://doi.org/10.1515/cdbme-2015-0099)  
 
 ### Bibtex
 ```
@@ -102,6 +103,8 @@ pages = {409--412}
 ```
 
 ## Contact 
-Andreas Wachter, Luca Azzolin Institute of Biomedical Engineering<br>
-Karlsruhe Institute of Technology<br>
+Andreas Wachter, Luca Azzolin, Axel Loewe
+Institute of Biomedical Engineering
+Karlsruhe Institute of Technology (KIT)
 www.ibt.kit.edu
+publications@ibt.kit.edu

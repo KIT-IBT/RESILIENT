@@ -2,10 +2,9 @@
 A RulE baSed atrIaL fIber gENeraTor.
 
 ## Overview
-RESILIENT is a rule-based artial fiber generator for generating bi-atrial fibers and interatrial bridges. The algortihm was developed at IBT and published under [[1](#1)]. The algrothim works with surface, terahedron  and voxel meshes. The fibers based on 22 seedpoint, 9 in the right atrium and 13 in the left atrium. They have to be selected by the user according to [[1](#1)]. 
+RESILIENT is a rule-based artial fiber generator for generating bi-atrial fibers and interatrial bridges. The algortihm was developed at IBT and published under [[1](#1)]. The algrothim works with surface, terahedron  and voxel meshes. The fibers based on 22 seedpoint, 9 in the right atrium and 13 in the left atrium. They have to be selected by the user according to [[1](#1)].
 
-
-![localization of the seedpoints]()
+![localization of the seedpoints](https://user-images.githubusercontent.com/70153727/114750043-d701d500-9d53-11eb-9d02-7608baddf1b3.jpg)
 
 ## Requirements
 To install and run RESILIENT you need:

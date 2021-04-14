@@ -87,7 +87,7 @@ Copyright 2020 Andreas Wachter, Luca Azzolin Karlsruhe Institute of Technology.
 <a id="1">[1]</a> [Wachter, A. et al., 2015. Mesh structure-independent modeling of patient-specific atrial fiber orientation. Current Directions in Biomedical Engineering, 1(1), 409-412.](https://doi.org/10.1515/cdbme-2015-0099)  
 
 ### Bibtex
-'''
+```
 @article{Wachter_2015
 author = {Andreas Wachter and Axel Loewe and Martin W Krueger and Olaf Dössel and Gunnar Seemann},
 doi = {doi:10.1515/cdbme-2015-0099},
@@ -99,7 +99,7 @@ volume = {1},
 year = {2015},
 pages = {409--412}
 }
-'''
+```
 
 ## Contact 
 Andreas Wachter, Luca Azzolin Institute of Biomedical Engineering<br>

@@ -20,7 +20,7 @@ int main(int argc, char *const argv[]) {
 	for (int i = 0; i < argc; i++) {
 		if (strcmp(argv[i], "-help") == 0) {
 
-			std::cerr << "\t" << " TestTetrahedralize: This programm can used for testing if a bridge can tetralizied with tetgen ." << "\n\n";
+			std::cerr << "\t" << "TestTetrahedralize: This programm can used for testing if a bridge can tetralizied with tetgen ." << "\n";
 			std::cerr << "\t" << "<" << "path for input datafile *.vtu | vtp | vtk" << ">" << "\n";
 			exit(0);
 		}

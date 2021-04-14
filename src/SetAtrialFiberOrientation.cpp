@@ -164,12 +164,12 @@ int main(int argc, char*const argv[]) {
 }
 
 void  SetAtrialFiberOrientation::printOptions() {
-	std::cerr << "\t" << " SetAtrialFiberOrientation: This programm can used for setting semiautomatic atrial fieberorientation." << "\n";
+	std::cerr << "\t" << "RESILIENT: This programm setting semi-automatic the atrial fiber and interatrial bridges." << "\n";
 
 	std::cerr << "\t" << "<" << "path for input datafile *.vtu | vtp | vtk" << ">" << "\n";
-	std::cerr << "\t" << "<" << "path for output datafile *.vtu|vtp|vtk" << ">" << "\n";
+	std::cerr << "\t" << "<" << "path for output datafile *.vtu | vtp | vtk" << ">" << "\n";
 	std::cerr << "\t" << "<" << "path for seedpoints file *.txt" << ">" << "\n";
-
+	std::cerr << "\n";
 	std::cerr << "\t" << "[" << "-intermediateResultPrefix" << "] " << "(default: inputdataname): prefix for intermediate results" << "\n";
 	std::cerr << "\t" << "[" << "-writeIntermediateData" << "]: " << "for saving intermediate Results" << "\n";
 	std::cerr << "\t" << "[" << "-noOpenVTPBridgeInAtrial" << "]: " << "open atrial Bridges in VTP" << "\n";

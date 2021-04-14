@@ -18,10 +18,10 @@
 int main(int argc, char *const argv[]) {
 	for (int i = 0; i < argc; i++) {
 		if (strcmp(argv[i], "-help") == 0) {
-			std::cerr << "\t" << " SetAtrialFiberOrientation: This programm can used for setting semiautomatic atrial fieberorientation." << "\n";
+			std::cerr << "\t" << "SetAtrialFiberOrientation: This programm can used for setting semiautomatic atrial fieberorientation." << "\n";
 
 			std::cerr << "\t" << "<" << "path for input datafile *.vtu | vtp | vtk" << ">" << "\n";
-			std::cerr << "\t" << "<" << "path for output datafile *.vtu|vtp|vtk" << ">" << "\n";
+			std::cerr << "\t" << "<" << "path for output datafile *.vtu | vtp | vtk" << ">" << "\n";
 			std::cerr << "\t" << "<" << "path for seedpoints file *.txt" << ">" << "\n";
 
 			exit(0);

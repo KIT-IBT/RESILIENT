@@ -41,7 +41,7 @@ endif(CORK_FOUND)
 
 find_library(GMP_LIBRARY gmp)
 
-add_executable(SetAtrialFiberOrientation
+add_executable(RESILIENT
     src/SetAtrialFiberOrientation.cpp
     src/FiberOrientation.cpp
     src/AveragingOrientation.cpp
@@ -67,7 +67,7 @@ add_executable(SetAtrialFiberOrientation
     src/Writer.cpp
 )
 
-target_link_libraries(SetAtrialFiberOrientation
+target_link_libraries(RESILIENT
     ${VTK_LIBRARIES}
     ${TETGEN_LIBRARY}    
     ${CORK_LIBRARY}
@@ -111,4 +111,4 @@ target_link_libraries(FindAndMarkSeedPoints
 )
 
 
-install (TARGETS SetAtrialFiberOrientation TestTetrahedralize FindAndMarkSeedPoints DESTINATION bin/)
+install (TARGETS RESILIENT TestTetrahedralize FindAndMarkSeedPoints DESTINATION bin/)

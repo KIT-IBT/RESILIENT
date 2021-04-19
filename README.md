@@ -9,7 +9,7 @@ To install and run RESILIENT, you need:
 - VTK (https://gitlab.kitware.com/vtk/vtk)
 - GMP (https://gmplib.org)
 - Cork (https://github.com/gilbo/cork)
-- Tetgen (https://www.tetgen.org)
+- Tetgen (http://www.tetgen.org)
 
 Install these using your package manager (apt, homebrew, macports...) or download the source code directly. 
 

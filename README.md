@@ -44,7 +44,7 @@ Materials
 ```
 
 ### Surface mesh (VTK/VTP) pre-processing
-The atrial mesh requires special epi materials and should be divided into left and right atrium for the algorithm.
+The atrial mesh requires special epi materials and should be divided into left and right atrium for the algorithm. The artia should be closed e.g. the valves should be filled with blood (material: 150 right/ 151 left). 
 The setpum can be part of the left atrium only or split into left/right. Both options should work.
 
 ```
@@ -170,10 +170,20 @@ RESILENT inputMesh.vtp/vtu/vtk inputMesh_wafo.vtp/vtu/vtk seedPoint.txt
 ```
 If you don't know if the point are good for the mesh it makes sense to start RESILENT with the optional Parameter:
 ```
-RESILENT inputMesh.vtp/vtu/vtk inputMesh_wafo.vtp/vtu/vtk seedPoint.txt -writeIntermediateData -debug
+RESILENT inputMesh.vtp/vtu/vtk inputMesh_wafo.vtp/vtu/vtk seedPoint.txt -writeIntermediateData -debug 
 ```
 
-## Debug and Problems
+#### Surface mesh
+```
+RESILENT /example/surface_mesh/mesh_material.vtp /example/surface_mesh/mesh_with_fiber.vtp /example/surface_mesh/seedPoint.txt -noInitialClean
+```
+
+#### Volume mesh
+```
+RESILENT /example/volume_mesh/mesh_material.vtu /example/volume_mesh/mesh_with_fiber.vtu /example/volume_mesh/seedPoint.txt -noInitialClean
+```
+
+## Debug and problems
 ### Fiber calculation
 If the fiber could not be calculated, run RESILIENT again and use the "writeIntermediateData" flag and "debug" to get additional information and find the error. In most cases, one or two points are misplaced, so the base path has an incorrect path. Find them and replace them to fix the problem. For this, there is an array "basePath" in the network file where the base paths are stored. Compare them with the following figures.
 

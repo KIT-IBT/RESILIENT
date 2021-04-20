@@ -165,22 +165,19 @@ Some tissue classes are substituted at the end of the calculation for the simula
 
 ## Example
 ### Example for a vtp/vtu/vtk mesh:
-```
-RESILENT inputMesh.vtp/vtu/vtk inputMesh_wafo.vtp/vtu/vtk seedPoint.txt 
-```
 If you don't know if the point are good for the mesh it makes sense to start RESILENT with the optional Parameter:
 ```
 RESILENT inputMesh.vtp/vtu/vtk inputMesh_wafo.vtp/vtu/vtk seedPoint.txt -writeIntermediateData -debug 
 ```
 
-#### Surface mesh
+### Surface mesh
 ```
-RESILENT /example/surface_mesh/mesh_material.vtp /example/surface_mesh/mesh_with_fiber.vtp /example/surface_mesh/seedPoint.txt -noInitialClean
+RESILIENT ./example/surface_mesh/mesh_material.vtp ./example/surface_mesh/mesh_with_fiber.vtp ./example/surface_mesh/seedPoint.txt -noInitialClean
 ```
 
-#### Volume mesh
+### Volume mesh
 ```
-RESILENT /example/volume_mesh/mesh_material.vtu /example/volume_mesh/mesh_with_fiber.vtu /example/volume_mesh/seedPoint.txt -noInitialClean
+RESILIENT ./example/volume_mesh/mesh_material.vtu ./example/volume_mesh/mesh_with_fiber.vtu ./example/volume_mesh/seedPoint.txt -noInitialClean
 ```
 
 ## Debug and problems

@@ -587,10 +587,7 @@ void FiberOrientation::setFiberOrientationRightAtrium(DataFormat &data) {
 		setPath("tricuslineGrownPath", Methods::growPathTransmural(data, getPath("pathR12R7"), 3.96, Material::Vorhof_rechts, "right"));
 	}
 	else {
-		setPath("tricuslineGrownPath", Methods::growPath(data, getPath("pathR12R7"), 3.96, Material::Vorhof_rechts, Material::Vorhof_rechts)); // ändert
-		 // sich
-		 // evtl.
-		 // noch
+		setPath("tricuslineGrownPath", Methods::growPath(data, getPath("pathR12R7"), 3.96, Material::Vorhof_rechts, Material::Vorhof_rechts));
 	}
 	Methods::smoothingPath(data, getPath("pathR12R7"));
 	Methods::setMaterial(data, getPath("tricuslineGrownPath"), Material::Tricusline, Material::Vorhof_rechts);
@@ -683,7 +680,7 @@ void FiberOrientation::setFiberOrientationRightAtrium(DataFormat &data) {
 		Methods::writeIntermediateData(data, "Crista_Terminalis_extended_right_debug");
 	}
 
-	cout << "calculate Pektinatmuskeln " << endl;
+	cout << "calculate Pectinate muscles " << endl;
 	setPath("helpPath1", Methods::getPercentOfPath(data, getPath("pathR12R4"), 3));
 	setPath("helpPath2", Methods::subPathFromPath(getPath("pathR12R4"), getPath("helpPath1")));
 	setPath("chrisTermA", Methods::add2Paths(getPath("helpPath2"), getPath("pathR4R14")));
@@ -945,7 +942,7 @@ void FiberOrientation::setFiberOrientationRightAtrium(DataFormat &data) {
 			17), getRPoint(15), getRPoint(31), getRPoint(5));
 
 	if (ConfigGeneral::debug) {
-		Methods::writeIntermediateData(data, "isthmus_and_under _intercavale_right_debug");
+		Methods::writeIntermediateData(data, "isthmus_and_under_intercavale_right_debug");
 	}
 
 	cout << "isthmus and under intercavale calculated" << endl;
@@ -1094,7 +1091,7 @@ void FiberOrientation::setFiberOrientationRightAtrium(DataFormat &data) {
 	Methods::setMaterial(data, getPath("intercavalRegion"), Material::IntercavanalBundel, Material::Vorhof_rechts);
 
 	if (ConfigGeneral::debug) {
-		Methods::writeIntermediateData(data, "intercavalRegion_right_right_debug");
+		Methods::writeIntermediateData(data, "intercavalRegion_right_debug");
 	}
 
 	cout << "right atrium calculated" << endl;
@@ -1216,7 +1213,7 @@ void FiberOrientation::setFiberOrientationLeftEndoAtrium(DataFormat &data) {
 		Methods::writeIntermediateData(data, "pathL1overL32L12L7_left_endo_debug");
 	}
 
-	cout << "calculate MittleLine" << endl;
+	cout << "calculate " << endl;
 	setPath("pathL5L4", Methods::pathSearch(data, getLPointEndo(4), getLPointEndo(3), Material::subendo_left_Atrial_Cardium, Material::Vorhof_links_Endo, "left"));
 	setLPointEndo(17, Methods::pointAtPercentOfPath(data, getPath("pathL5L4"), 50));
 	setPath("pathL7L6", Methods::pathSearch(data, getLPointEndo(6), getLPointEndo(5), Material::subendo_left_Atrial_Cardium, Material::Vorhof_links_Endo, "left"));
@@ -1227,24 +1224,24 @@ void FiberOrientation::setFiberOrientationLeftEndoAtrium(DataFormat &data) {
 	setLPointEndo(20, Methods::pointAtPercentOfPath(data, getPath("pathL19L20"), 50));
 	setPath("pathL19L21", Methods::pathSearch(data, getLPointEndo(18), getLPointEndo(20), Material::subendo_left_Atrial_Cardium, Material::Vorhof_links_Endo, "left"));
 	setPath("pathL18L19", Methods::pathSearch(data, getLPointEndo(17), getLPointEndo(18), Material::subendo_left_Atrial_Cardium, Material::Vorhof_links_Endo, "left"));
-	setPath("MittleLine", Methods::add2Paths(getPath("pathL18L19"), getPath("pathL19L21")));
+	setPath("", Methods::add2Paths(getPath("pathL18L19"), getPath("pathL19L21")));
 
-	Methods::pathMarker(data, getPath("MittleLine"), Material::Vorhof_links_Endo);
+	Methods::pathMarker(data, getPath(""), Material::Vorhof_links_Endo);
 	if (ConfigFiberorientation::growPathTransmural) {
-		setPath("MittleLineGrownPath", Methods::growPathTransmural(data, getPath("MittleLine"), 2.64 + ConfigFiberorientation::growPathOffsetLeft, Material::Vorhof_links_Endo, "left"));
+		setPath("GrownPath", Methods::growPathTransmural(data, getPath(""), 2.64 + ConfigFiberorientation::growPathOffsetLeft, Material::Vorhof_links_Endo, "left"));
 	}
 	else {
-		setPath("MittleLineGrownPath", Methods::growPath(data, getPath("MittleLine"), 2.64 + ConfigFiberorientation::growPathOffsetLeft, Material::Vorhof_links_Endo, Material::Vorhof_links_Endo));
+		setPath("GrownPath", Methods::growPath(data, getPath(""), 2.64 + ConfigFiberorientation::growPathOffsetLeft, Material::Vorhof_links_Endo, Material::Vorhof_links_Endo));
 	}
-	Methods::smoothingPath(data, getPath("MittleLine"));
+	Methods::smoothingPath(data, getPath(""));
 	Methods::setMaterial(data, getPath(
-		"MittleLineGrownPath"), Material::subendo_left_Atrial_Cardium, Material::Vorhof_links_Endo);
+		"GrownPath"), Material::subendo_left_Atrial_Cardium, Material::Vorhof_links_Endo);
 
 	if (ConfigGeneral::debug) {
-		Methods::writeIntermediateData(data, "MittleLine_left_endo_debug");
+		Methods::writeIntermediateData(data, "_left_endo_debug");
 	}
 
-	cout << "MittleLine finished" << endl;
+	cout << " finished" << endl;
 
 	cout << "calculate pathL21L9" << endl;
 	setPath("pathL21L9", Methods::pathSearch(data, getLPointEndo(20), getLPointEndo(8), Material::subendo_left_Atrial_Cardium, Material::Vorhof_links_Endo, "left"));
@@ -1298,25 +1295,25 @@ void FiberOrientation::setFiberOrientationLeftEndoAtrium(DataFormat &data) {
 
 
 	setPath("pathL5overL7toL9", Methods::add2Paths(getPath("pathL5L7"), getPath("pathL7L9")));
-	setPath("pathMittleLineandMittleLineA", Methods::add2Paths(getPath("MittleLine"), getPath("pathL21L9")));
+	setPath("pathandA", Methods::add2Paths(getPath(""), getPath("pathL21L9")));
 
 	vector<double> seedPoint1 = Methods::getSeedPoint(data, getPath("pathL5overL7toL9"), getPath(
-		"pathMittleLineandMittleLineA"), Material::Vorhof_links_Endo, Material::subendo_left_Atrial_Cardium, 50, "left");
-	setPath("areaBettweenMittleLineandLeftPaths", Methods::regionInterpolateBetween2PathwithSeed(data, getPath("pathL5overL7toL9"), getPath("pathMittleLineandMittleLineA"),
+		"pathandA"), Material::Vorhof_links_Endo, Material::subendo_left_Atrial_Cardium, 50, "left");
+	setPath("areaBetweenMiddleLineandLeftPaths", Methods::regionInterpolateBetween2PathwithSeed(data, getPath("pathL5overL7toL9"), getPath("pathandA"),
 		Material::Vorhof_links_Endo, seedPoint1));
 	Methods::setMaterial(data, getPath(
-		"areaBettweenMittleLineandLeftPaths"), Material::subendo_left_Atrial_Cardium, Material::Vorhof_links_Endo);
+		"areaBetweenMiddleLineandLeftPaths"), Material::subendo_left_Atrial_Cardium, Material::Vorhof_links_Endo);
 
 	setPath("pathL4overL6toL8", Methods::add2Paths(getPath("pathL4L6"), getPath("pathL6L8")));
-	setPath("pathMittleLineandMittleLineB", Methods::add2Paths(getPath("MittleLine"), getPath("pathL21L8")));
+	setPath("pathandB", Methods::add2Paths(getPath(""), getPath("pathL21L8")));
 
-	vector<double> seedPoint2 = Methods::getSeedPoint(data, getPath("pathL4overL6toL8"), getPath("pathMittleLineandMittleLineB"), Material::Vorhof_links_Endo, Material::subendo_left_Atrial_Cardium, 50, "left");
-	setPath("areaBettweenMittleLineandRightPaths", Methods::regionInterpolateBetween2PathwithSeed(data, getPath("pathL4overL6toL8"), getPath("pathMittleLineandMittleLineB"), Material::Vorhof_links_Endo, seedPoint2));
+	vector<double> seedPoint2 = Methods::getSeedPoint(data, getPath("pathL4overL6toL8"), getPath("pathandB"), Material::Vorhof_links_Endo, Material::subendo_left_Atrial_Cardium, 50, "left");
+	setPath("areaBetweenMiddleLineandRightPaths", Methods::regionInterpolateBetween2PathwithSeed(data, getPath("pathL4overL6toL8"), getPath("pathandB"), Material::Vorhof_links_Endo, seedPoint2));
 	Methods::setMaterial(data, getPath(
-		"areaBettweenMittleLineandRightPaths"), Material::subendo_left_Atrial_Cardium, Material::Vorhof_links_Endo);
+		"areaBetweenMiddleLineandRightPaths"), Material::subendo_left_Atrial_Cardium, Material::Vorhof_links_Endo);
 
 	if (ConfigGeneral::debug) {
-		Methods::writeIntermediateData(data, "areaBettweenMittleLineandRight_left_endo_debug");
+		Methods::writeIntermediateData(data, "areaBetweenMiddleLineandRight_left_endo_debug");
 	}
 
 	cout << "Area finished" << endl;
@@ -1770,7 +1767,7 @@ void FiberOrientation::setFiberOrientationLeftVeins(DataFormat &data) {
 		}
 	}
 	else {
-		cout << "RIPV don't calculated" << endl;
+		cout << "RIPV could not be calculated" << endl;
 	}
 
 	cout << "calculate RSPV" << endl;
@@ -1823,7 +1820,7 @@ void FiberOrientation::setFiberOrientationLeftVeins(DataFormat &data) {
 		}
 	}
 	else {
-		cout << "RSPV don't calculated" << endl;
+		cout << "RSPV could not be calculated" << endl;
 	}
 
 	cout << "calculate LSPV" << endl;
@@ -1861,7 +1858,7 @@ void FiberOrientation::setFiberOrientationLeftVeins(DataFormat &data) {
 		}
 	}
 	else {
-		cout << "LSPV don't calculated" << endl;
+		cout << "LSPV could not be calculated" << endl;
 	}
 
 
@@ -1901,7 +1898,7 @@ void FiberOrientation::setFiberOrientationLeftVeins(DataFormat &data) {
 		}
 	}
 	else {
-		cout << "LIPV don't calculated" << endl;
+		cout << "LIPV could not be calculated" << endl;
 	}
 } // FiberOrientation::setFiberOrientationLeftVeins
 
@@ -2006,8 +2003,14 @@ void FiberOrientation::setBridges(DataFormat &data, string freeBridgePath) {
 
 		data = update(data);
 		closeOrientation(data);
-	}
-
+    
+        if (ConfigGeneral::debug) {
+            Methods::writeIntermediateData(data, "BachmannBundle_debug");
+        }
+    
+    }
+    
+    
 	double searchradius = 2 * getResolution();
 	if (searchradius < 1) {
 		searchradius = 1;
@@ -2020,7 +2023,11 @@ void FiberOrientation::setBridges(DataFormat &data, string freeBridgePath) {
 			30), 1, 1.65, 1.65, 1.65, Material::Upper_Posterior_Bridge_left, Material::Upper_Posterior_Bridge_right, 2 * searchradius);
 		data = update(data);
 		closeOrientation(data);
-	}
+	
+        if (ConfigGeneral::debug) {
+            Methods::writeIntermediateData(data, "upperPosteriorBridge_debug");
+        }
+    }
 
 	if (ConfigFiberorientation::coronarySinusBridge) {
 		cout << "calculate coronary Sinus bridge" << endl;
@@ -2029,6 +2036,10 @@ void FiberOrientation::setBridges(DataFormat &data, string freeBridgePath) {
 			13), 2, 1.65, 1.65, 1.65, Material::Coronary_Sinus_Bridge_left, Material::Coronary_Sinus_Bridge_right, 3 * searchradius);
 		data = update(data);
 		closeOrientation(data);
+        
+        if (ConfigGeneral::debug) {
+            Methods::writeIntermediateData(data, "coronarySinusBridge_debug");
+        }
 	}
 
 	if (ConfigFiberorientation::middlePosteriorBridge) {
@@ -2038,6 +2049,10 @@ void FiberOrientation::setBridges(DataFormat &data, string freeBridgePath) {
 			28), 3, 1.65, 1.65, 1.65, Material::Middle_Posterior_Bridge_left, Material::Middle_Posterior_Bridge_right, 2 * searchradius);
 		data = update(data);
 		closeOrientation(data);
+        
+        if (ConfigGeneral::debug) {
+            Methods::writeIntermediateData(data, "middlePosteriorBridge_debug");
+        }
 	}
 
 	if (ConfigFiberorientation::lowerAnteriorBridge) {
@@ -2047,6 +2062,10 @@ void FiberOrientation::setBridges(DataFormat &data, string freeBridgePath) {
 			39), 4, 1.65, 1.65, 1.65, Material::Lower_Anterior_Bridge_left, Material::Lower_Anterior_Bridge_right, 2 * searchradius);
 		data = update(data);
 		closeOrientation(data);
+        
+        if (ConfigGeneral::debug) {
+            Methods::writeIntermediateData(data, "lowerAnteriorBridge_debug");
+        }
 	}
 
 	if (ConfigFiberorientation::upperAnteriorBridge) {
@@ -2056,6 +2075,11 @@ void FiberOrientation::setBridges(DataFormat &data, string freeBridgePath) {
 			1), 5, 1.65, 1.65, 1.65, Material::Upper_Anterior_Bridge_left, Material::Upper_Anterior_Bridge_right, 2 * searchradius);
 		data = update(data);
 		closeOrientation(data);
+        
+        if (ConfigGeneral::debug) {
+            Methods::writeIntermediateData(data, "upperAnteriorBridge_debug");
+        }
+        
 	}
 	if (ConfigFiberorientation::freeBridge) {
 		int numberOfFreeBridges = readOutFreeBridgePointsPoints(freeBridgePath);
@@ -2065,6 +2089,10 @@ void FiberOrientation::setBridges(DataFormat &data, string freeBridgePath) {
 				i), freeBridgeMaterial.at(i));
 			data = update(data);
 			closeOrientationFreeBridge(data, freeBridgeMaterial.at(i));
+            
+            if (ConfigGeneral::debug) {
+                Methods::writeIntermediateData(data, "freeBridge_"+std::to_string(i)+"_debug");
+            }
 		}
 	}
 } // FiberOrientation::setBridges
@@ -2173,7 +2201,7 @@ void FiberOrientation::setBridge(DataFormat &data, vector<double> pointLeft, vec
 			pill.setInputType(DataFormat::vtp);
 
 			if (ConfigGeneral::debug) {
-				Methods::writeIntermediateData(pill, "bridge_difference");
+				Methods::writeIntermediateData(pill, "bridge_difference_debug");
 			}
 
 			vtkSmartPointer<vtkIdList> diffcellIDs = Methods::getAllCellNeighbours(pill, pill.getCentrePoints()->FindPoint(bridgeTempPoint3.at(0), bridgeTempPoint3.at(1), bridgeTempPoint3.at(2)));
@@ -2275,11 +2303,19 @@ void FiberOrientation::setBridge(DataFormat &data, vector<double> pointLeft, vec
 		DataFormat pill;
 		pill = Methods::getPill(getBPoint(pointPos), getBPoint(pointPos + 1), resolution, bridgewidth);
 
-		DataFormat helpBridge;
+        if (ConfigGeneral::debug) {
+            Methods::writeIntermediateData(pill, "pillBridge_debug");
+        }
+        
+        DataFormat helpBridge;
 		helpBridge.setInputType(DataFormat::vtp);
 		helpBridge.setVtkData(Methods::vtpUnion(vtkPolyData::SafeDownCast(data.getVtkData()), vtkPolyData::SafeDownCast(pill.getVtkData())));
 		helpBridge.setCentrePoints(Methods::calcCellCentroids(helpBridge.getVtkData()));
 
+        if (ConfigGeneral::debug) {
+            Methods::writeIntermediateData(helpBridge, "helpBridgeBridge1_debug");
+        }
+        
 		vtkSmartPointer<vtkIdList> removeCells = Methods::getCellsWereInOldData(helpBridge, data); // , centrepoint, // radius);
 		vtkSmartPointer<vtkPolyData> polyDataBridge = vtkPolyData::SafeDownCast(helpBridge.getVtkData());
 		for (vtkIdType i = 0; i < removeCells->GetNumberOfIds(); i++) {
@@ -2292,7 +2328,13 @@ void FiberOrientation::setBridge(DataFormat &data, vector<double> pointLeft, vec
 		cleanFilterPolyDataBridge->SetInputData(polyDataBridge);
 		cleanFilterPolyDataBridge->Update();
 		helpBridge.setVtkData(cleanFilterPolyDataBridge->GetOutput());
+        helpBridge.setCentrePoints(Methods::calcCellCentroids(helpBridge.getVtkData()));
 
+        vtkSmartPointer<vtkIdList> diffcellIDs = Methods::getAllCellNeighbours(helpBridge, helpBridge.getCentrePoints()->FindPoint(bridgeTempPoint3.at(0), bridgeTempPoint3.at(1), bridgeTempPoint3.at(2)));
+
+        helpBridge.setVtkData(Methods::extractCellsVtp(cleanFilterPolyDataBridge->GetOutput(), diffcellIDs));
+        helpBridge.setCentrePoints(Methods::calcCellCentroids(helpBridge.getVtkData()));
+        
 		if (ConfigFiberorientation::openVTPBridgeInAtrial) {
 			set<vtkIdType> removedCells;
 
@@ -2318,6 +2360,10 @@ void FiberOrientation::setBridge(DataFormat &data, vector<double> pointLeft, vec
 			cleanFilter->Update();
 
 			data.setVtkData(cleanFilter->GetOutput());
+            
+            if (ConfigGeneral::debug) {
+                Methods::writeIntermediateData(helpBridge, "helpBridgeBridge2_debug");
+            }
 		}
 
 		setPath("bridge" + to_string(bridgeNumber) + ".2", Methods::unionData(data, helpBridge));
@@ -3113,8 +3159,11 @@ void FiberOrientation::setBachmannBridgelong(DataFormat &data, vector<double> po
 			Methods::setMaterial(data, getPath("grownbridge" + to_string(bridgeNumber) + ".1"), bridgeMaterialLeft);
 
 			data = update(data);
-		}
-
+        
+            if (ConfigGeneral::debug) {
+                Methods::writeIntermediateData(data, "BachmannBundle_1_debug");
+            }
+        }
 
 		setPath("bridge" + to_string(bridgeNumber) + ".3", Methods::pathSearch(data, getBPoint(pointPos + 1), pathPoint, "right"));
 
@@ -3192,7 +3241,12 @@ void FiberOrientation::setBachmannBridgelong(DataFormat &data, vector<double> po
 			Methods::setMaterial(data, getPath("grownbridge" + to_string(bridgeNumber) + ".3"), bridgeMaterialRight);
 
 			data = update(data);
-		}
+		
+            if (ConfigGeneral::debug) {
+                Methods::writeIntermediateData(data, "BachmannBundle_3_debug");
+            }
+        }
+        
 		DataFormat pill2;
 		pill2 = Methods::getPill(getBPoint(pointPos), getBPoint(pointPos + 1), resolution, bridgewidth);
 
@@ -3201,6 +3255,10 @@ void FiberOrientation::setBachmannBridgelong(DataFormat &data, vector<double> po
 		bachmannLong2.setVtkData(Methods::vtpUnion(vtkPolyData::SafeDownCast(data.getVtkData()), vtkPolyData::SafeDownCast(pill2.getVtkData())));
 		bachmannLong2.setCentrePoints(Methods::calcCellCentroids(bachmannLong2.getVtkData()));
 
+        if (ConfigGeneral::debug) {
+            Methods::writeIntermediateData(bachmannLong2, "BachmannBundle_2_debug");
+        }
+        
 		vtkSmartPointer<vtkIdList> removeCells2 = Methods::getCellsWereInOldData(bachmannLong2, data);
 		vtkSmartPointer<vtkPolyData> polyDataBridge2 = vtkPolyData::SafeDownCast(bachmannLong2.getVtkData());
 		for (vtkIdType i = 0; i < removeCells2->GetNumberOfIds(); i++) {
@@ -3215,6 +3273,14 @@ void FiberOrientation::setBachmannBridgelong(DataFormat &data, vector<double> po
 		bachmannLong2.setVtkData(cleanFilterPolyDataBridge2->GetOutput());
 		bachmannLong2.setCentrePoints(Methods::calcCellCentroids(bachmannLong2.getVtkData()));
 
+        vtkSmartPointer<vtkIdList> diffcellIDs = Methods::getAllCellNeighbours(bachmannLong2, bachmannLong2.getCentrePoints()->FindPoint(bridge1TempPoint3.at(0), bridge1TempPoint3.at(1), bridge1TempPoint3.at(2)));
+
+        bachmannLong2.setVtkData(Methods::extractCellsVtp(cleanFilterPolyDataBridge2->GetOutput(), diffcellIDs));
+        bachmannLong2.setCentrePoints(Methods::calcCellCentroids(bachmannLong2.getVtkData()));
+
+       if (ConfigGeneral::debug) {
+          Methods::writeIntermediateData(bachmannLong2, "BachmannBundle_2.1_debug");
+       }
 		set<vtkIdType> removedCells2;
 
 		vtkSmartPointer<vtkIdList> removeDataCells2 = Methods::getPointsWereInOldData(data, pill2);
@@ -3239,7 +3305,11 @@ void FiberOrientation::setBachmannBridgelong(DataFormat &data, vector<double> po
 		cleanFilter2->Update();
 
 		data.setVtkData(cleanFilter2->GetOutput());
-
+        
+        if (ConfigGeneral::debug) {
+            Methods::writeIntermediateData(data, "BachmannBundle_2.2_debug");
+        }
+        
 		setPath("grownbridge" + to_string(bridgeNumber) + ".2", Methods::unionData(data, bachmannLong2));
 		Methods::vtpBridgeMarker(data, getPath("grownbridge" + to_string(
 			bridgeNumber) + ".2"), Material::insert_new_Material, getBPoint(
@@ -3330,7 +3400,7 @@ void FiberOrientation::setSinusNode(DataFormat &data) {
 			}
 		}
 	}
-	cout << "finised SinusNode" << endl;
+	cout << "finished SinusNode" << endl;
 } // FiberOrientation::setSinusNode
 
 /*! The definition part to close the fiber orientation of the atrials.
@@ -3735,25 +3805,36 @@ void FiberOrientation::calculateFiberOriented(DataFormat &data, string loadPoint
 
 	fiberOrientation.setFiberOrientationLeftAppendes(data);
 
-	if (ConfigGeneral::intermediateData) {
-		Methods::writeIntermediateData(data, filename + "_LeftAppendageAtriumFiberOrientation");
+	if (ConfigGeneral::intermediateData || ConfigGeneral::debug) {
+        std::string storename = filename + "_LeftAppendageAtriumFiberOrientation";
+        if (ConfigGeneral::debug) {
+            storename = "LeftAppendageAtriumFiberOrientation_debug";
+        }
+		Methods::writeIntermediateData(data, storename);
 	}
 
 	fiberOrientation.closeOrientation(data);
-
-	if (ConfigGeneral::intermediateData) {
-		Methods::writeIntermediateData(data, filename + "_CloseFiberOrientation");
-	}
+    
+    if (ConfigGeneral::intermediateData || ConfigGeneral::debug) {
+        std::string storename = filename + "_CloseFiberOrientation";
+        if (ConfigGeneral::debug) {
+            storename = "CloseFiberOrientation_debug";
+        }
+        Methods::writeIntermediateData(data, storename);
+    }
 
 	if (ConfigFiberorientation::rightAtrium) {
 		fiberOrientation.setBridges(data, freeBridgePath);
 
-		if (ConfigGeneral::intermediateData) {
-			Methods::writeIntermediateData(data, filename + "_Bridges");
-		}
+        if (ConfigGeneral::intermediateData || ConfigGeneral::debug) {
+            std::string storename = filename + "_Bridges";
+            if (ConfigGeneral::debug) {
+                storename = "Bridges_debug";
+            }
+            Methods::writeIntermediateData(data, storename);
+        }
 	}
 	if (!ConfigFiberorientation::noEndCleanup) {
-		cout << "entering anyway" << endl;
 		if (ConfigFiberorientation::rightAtrium) {
 			Methods::endCleanCase(data, fiberOrientation.getRPoint(2));
 		}
@@ -3763,9 +3844,13 @@ void FiberOrientation::calculateFiberOriented(DataFormat &data, string loadPoint
 	}
 	fiberOrientation.closeOrientation(data);
 
-	if (ConfigGeneral::intermediateData) {
-		Methods::writeIntermediateData(data, filename + "_CloseAndClean");
-	}
+    if (ConfigGeneral::intermediateData || ConfigGeneral::debug) {
+        std::string storename = filename + "_CloseAndClean";
+        if (ConfigGeneral::debug) {
+            storename = "CloseAndClean_debug";
+        }
+        Methods::writeIntermediateData(data, storename);
+    }
 
 	if (ConfigFiberorientation::rightAtrium) {
 		fiberOrientation.setSinusNode(data);

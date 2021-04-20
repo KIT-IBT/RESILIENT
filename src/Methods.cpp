@@ -8092,7 +8092,7 @@ vector<double> Methods::findClosedPointinMaterialwithoutOrientation(DataFormat &
 		newPoint.at(0) = newPointArray[0];
 		newPoint.at(1) = newPointArray[1];
 		newPoint.at(2) = newPointArray[2];
-		cout << "The point: " << point.at(0) << ", " << point.at(1) << ", " << point.at(2) << " was moved in: " <<
+		cout << "The point: " << point.at(0) << ", " << point.at(1) << ", " << point.at(2) << " was moved to: " <<
 			newPoint.at(0) << ", " << newPoint.at(1) << ", " << newPoint.at(2) << endl;
 		return newPoint;
 	}
@@ -8199,7 +8199,7 @@ vector<double> Methods::findClosedPointinMaterialInRightEpi(DataFormat &data, ve
 		newPoint.at(0) = newPointArray[0];
 		newPoint.at(1) = newPointArray[1];
 		newPoint.at(2) = newPointArray[2];
-		cout << "The point: " << point.at(0) << ", " << point.at(1) << ", " << point.at(2) << " was moved in: " <<
+		cout << "The point: " << point.at(0) << ", " << point.at(1) << ", " << point.at(2) << " was moved to: " <<
 			newPoint.at(0) << ", " << newPoint.at(1) << ", " << newPoint.at(2) << endl;
 		return newPoint;
 	}
@@ -8230,7 +8230,7 @@ vector<double> Methods::findClosedPointinMaterialInLeftEpi(DataFormat &data, vec
 		newPoint.at(0) = newPointArray[0];
 		newPoint.at(1) = newPointArray[1];
 		newPoint.at(2) = newPointArray[2];
-		cout << "The point: " << point.at(0) << ", " << point.at(1) << ", " << point.at(2) << " was moved in: " <<
+		cout << "The point: " << point.at(0) << ", " << point.at(1) << ", " << point.at(2) << " was moved to: " <<
 			newPoint.at(0) << ", " << newPoint.at(1) << ", " << newPoint.at(2) << endl;
 		return newPoint;
 	}
@@ -8261,7 +8261,7 @@ vector<double> Methods::findClosedPointinMaterialInLeftEndo(DataFormat &data, ve
 		newPoint.at(0) = newPointArray[0];
 		newPoint.at(1) = newPointArray[1];
 		newPoint.at(2) = newPointArray[2];
-		cout << "The point: " << point.at(0) << ", " << point.at(1) << ", " << point.at(2) << " was moved in: " <<
+		cout << "The point: " << point.at(0) << ", " << point.at(1) << ", " << point.at(2) << " was moved to: " <<
 			newPoint.at(0) << ", " << newPoint.at(1) << ", " << newPoint.at(2) << endl;
 		return newPoint;
 	}
@@ -8292,7 +8292,7 @@ vector<double> Methods::findClosedPointinMaterialInRightEndo(DataFormat &data, v
 		newPoint.at(0) = newPointArray[0];
 		newPoint.at(1) = newPointArray[1];
 		newPoint.at(2) = newPointArray[2];
-		cout << "The point: " << point.at(0) << ", " << point.at(1) << ", " << point.at(2) << " was moved in: " <<
+		cout << "The point: " << point.at(0) << ", " << point.at(1) << ", " << point.at(2) << " was moved to: " <<
 			newPoint.at(0) << ", " << newPoint.at(1) << ", " << newPoint.at(2) << endl;
 		return newPoint;
 	}
@@ -8325,7 +8325,7 @@ vector<double> Methods::findClosedPointinMaterialInRightInRegion(DataFormat &dat
 		newPoint.at(0) = newPointArray[0];
 		newPoint.at(1) = newPointArray[1];
 		newPoint.at(2) = newPointArray[2];
-		cout << "The point: " << point.at(0) << ", " << point.at(1) << ", " << point.at(2) << " was moved in: " <<
+		cout << "The point: " << point.at(0) << ", " << point.at(1) << ", " << point.at(2) << " was moved to: " <<
 			newPoint.at(0) << ", " << newPoint.at(1) << ", " << newPoint.at(2) << endl;
 		return newPoint;
 	}
@@ -8356,7 +8356,7 @@ vector<double> Methods::findClosedPointinMaterialInLeftInRegion(DataFormat &data
 		newPoint.at(0) = newPointArray[0];
 		newPoint.at(1) = newPointArray[1];
 		newPoint.at(2) = newPointArray[2];
-		cout << "The point: " << point.at(0) << ", " << point.at(1) << ", " << point.at(2) << " was moved in: " <<
+		cout << "The point: " << point.at(0) << ", " << point.at(1) << ", " << point.at(2) << " was moved to: " <<
 			newPoint.at(0) << ", " << newPoint.at(1) << ", " << newPoint.at(2) << endl;
 		return newPoint;
 	}
@@ -9051,7 +9051,7 @@ vector<double> Methods::findClosedPointinMaterialinDirectionPoint(DataFormat &da
 		newPoint.at(0) = newPointArray[0];
 		newPoint.at(1) = newPointArray[1];
 		newPoint.at(2) = newPointArray[2];
-		cout << "The point: " << point.at(0) << ", " << point.at(1) << ", " << point.at(2) << " was moved in: " <<
+		cout << "The point: " << point.at(0) << ", " << point.at(1) << ", " << point.at(2) << " was moved to: " <<
 			newPoint.at(0) << ", " << newPoint.at(1) << ", " << newPoint.at(2) << endl;
 		return newPoint;
 	}
@@ -9158,7 +9158,7 @@ vector<double> Methods::findFurthestPointinMaterialtoPoint(DataFormat &data, vec
 		newPoint.at(0) = newPointArray[0];
 		newPoint.at(1) = newPointArray[1];
 		newPoint.at(2) = newPointArray[2];
-		cout << "The point: " << point.at(0) << ", " << point.at(1) << ", " << point.at(2) << " was moved in: " <<
+		cout << "The point: " << point.at(0) << ", " << point.at(1) << ", " << point.at(2) << " was moved to: " <<
 			newPoint.at(0) << ", " << newPoint.at(1) << ", " << newPoint.at(2) << endl;
 		return newPoint;
 	}
@@ -10113,11 +10113,11 @@ vtkSmartPointer<vtkIdList> Methods::getCellsWereInOldData(DataFormat &newData, D
 			(oldData.getCentrePoints()->GetPoint(oldCellID)[2] == point[2])) {
 			dupliactedCells->InsertNextId(i);
 		}
-		else {
+		/*else {
 			double distance = sqrt(abs(vtkMath::Distance2BetweenPoints(point, oldData.getCentrePoints()->GetPoint(oldCellID))));
-			if (distance <= 0.00001)
-				dupliactedCells->InsertNextId(i);
-		}
+			if (distance <= 0.0001)
+                dupliactedCells->InsertNextId(i);
+		}*/
 	}
 
 
@@ -10208,8 +10208,15 @@ vtkSmartPointer<vtkIdList> Methods::unionData(DataFormat &olddata, DataFormat &n
 	baseDiffVec->FillComponent(1, 0);
 	baseDiffVec->FillComponent(2, 0);
 
+    vtkSmartPointer<vtkDoubleArray> basePath = vtkSmartPointer<vtkDoubleArray>::New();
+    basePath->SetName("basePath");
+    basePath->SetNumberOfComponents(1);
+    basePath->SetNumberOfTuples(olddata.getVtkData()->GetNumberOfCells() + newData.getVtkData()->GetNumberOfCells());
+    basePath->FillComponent(0, 0);
+    
 	vtkSmartPointer<vtkDoubleArray> status = vtkSmartPointer<vtkDoubleArray>::New();
 	status->SetName("Status");
+    status->SetNumberOfTuples(olddata.getVtkData()->GetNumberOfCells() + newData.getVtkData()->GetNumberOfCells());
 	status->SetNumberOfComponents(1);
 	status->FillComponent(0, 0);
 
@@ -10234,6 +10241,7 @@ vtkSmartPointer<vtkIdList> Methods::unionData(DataFormat &olddata, DataFormat &n
 		uGrid->GetCellData()->AddArray(thetaPhi);
 		uGrid->GetCellData()->AddArray(diffVec);
 		uGrid->GetCellData()->AddArray(baseDiffVec);
+        uGrid->GetCellData()->AddArray(basePath);
 		uGrid->GetCellData()->AddArray(status);
 
 
@@ -10248,7 +10256,9 @@ vtkSmartPointer<vtkIdList> Methods::unionData(DataFormat &olddata, DataFormat &n
 			uGrid->GetCellData()->GetArray("Theta")->InsertTuple(newcellID, olddata.getVtkData()->GetCellData()->GetArray("Theta")->GetTuple(j));
 			uGrid->GetCellData()->GetArray("ThetaPhi")->InsertTuple(newcellID, olddata.getVtkData()->GetCellData()->GetArray("ThetaPhi")->GetTuple(j));
 			uGrid->GetCellData()->GetArray("DifferenceVector")->InsertTuple(newcellID, olddata.getVtkData()->GetCellData()->GetArray("DifferenceVector")->GetTuple(j));
-			uGrid->GetCellData()->GetArray("BasedPathDifferenceVector")->InsertTuple(newcellID, olddata.getVtkData()->GetCellData()->GetArray("BasedPathDifferenceVector")->GetTuple(j));
+			uGrid->GetCellData()->GetArray("basePath")->InsertTuple(newcellID, olddata.getVtkData()->GetCellData()->GetArray("basePath")->GetTuple(j));
+            uGrid->GetCellData()->GetArray("BasedPathDifferenceVector")->InsertTuple(newcellID, olddata.getVtkData()->GetCellData()->GetArray("BasedPathDifferenceVector")->GetTuple(j));
+
 		}
 
 
@@ -10280,6 +10290,7 @@ vtkSmartPointer<vtkIdList> Methods::unionData(DataFormat &olddata, DataFormat &n
 			uGrid->GetCellData()->GetArray("Theta")->InsertComponent(newcellID, 0, 0);
 			uGrid->GetCellData()->GetArray("ThetaPhi")->InsertTuple2(newcellID, 0, 0);
 			uGrid->GetCellData()->GetArray("DifferenceVector")->InsertTuple3(newcellID, 0, 0, 0);
+            uGrid->GetCellData()->GetArray("basePath")->InsertComponent(newcellID, 0, 0);
 			uGrid->GetCellData()->GetArray("BasedPathDifferenceVector")->InsertTuple3(newcellID, 0, 0, 0);
 		}
 		uGrid->SetPoints(pointLocator->GetPoints());
@@ -10306,6 +10317,7 @@ vtkSmartPointer<vtkIdList> Methods::unionData(DataFormat &olddata, DataFormat &n
 		polydata->GetCellData()->AddArray(thetaPhi);
 		polydata->GetCellData()->AddArray(diffVec);
 		polydata->GetCellData()->AddArray(baseDiffVec);
+        polydata->GetCellData()->AddArray(basePath);
 		polydata->GetCellData()->AddArray(status);
 
 		if (!olddata.getDoubleLayer()) {
@@ -10353,6 +10365,13 @@ vtkSmartPointer<vtkIdList> Methods::unionData(DataFormat &olddata, DataFormat &n
 			diffVecEndo->FillComponent(1, 0);
 			diffVecEndo->FillComponent(2, 0);
 
+            vtkSmartPointer<vtkDoubleArray> basePathEndo = vtkSmartPointer<vtkDoubleArray>::New();
+            basePathEndo->SetName("basePathEndo");
+            basePathEndo->SetNumberOfComponents(1);
+            basePathEndo->SetNumberOfTuples(olddata.getVtkData()->GetNumberOfCells() + newData.getVtkData()->GetNumberOfCells());
+            basePathEndo->FillComponent(0, 0);
+
+            
 			vtkSmartPointer<vtkDoubleArray> statusEndo = vtkSmartPointer<vtkDoubleArray>::New();
 			statusEndo->SetName("StatusEndo");
 			statusEndo->SetNumberOfTuples(olddata.getVtkData()->GetNumberOfCells() + newData.getVtkData()->GetNumberOfCells());
@@ -10365,6 +10384,7 @@ vtkSmartPointer<vtkIdList> Methods::unionData(DataFormat &olddata, DataFormat &n
 			polydata->GetCellData()->AddArray(phiEndo);
 			polydata->GetCellData()->AddArray(thetaPhiEndo);
 			polydata->GetCellData()->AddArray(diffVecEndo);
+            polydata->GetCellData()->AddArray(basePathEndo);
 			polydata->GetCellData()->AddArray(statusEndo);
 		}
 
@@ -10381,6 +10401,7 @@ vtkSmartPointer<vtkIdList> Methods::unionData(DataFormat &olddata, DataFormat &n
 			polydata->GetCellData()->GetArray("ThetaPhi")->InsertTuple(cellID, olddata.getVtkData()->GetCellData()->GetArray("ThetaPhi")->GetTuple(k));
 			polydata->GetCellData()->GetArray("DifferenceVector")->InsertTuple(cellID, olddata.getVtkData()->GetCellData()->GetArray("DifferenceVector")->GetTuple(k));
 			polydata->GetCellData()->GetArray("BasedPathDifferenceVector")->InsertTuple(cellID, olddata.getVtkData()->GetCellData()->GetArray("BasedPathDifferenceVector")->GetTuple(k));
+            polydata->GetCellData()->GetArray("basePath")->InsertTuple(cellID, olddata.getVtkData()->GetCellData()->GetArray("basePath")->GetTuple(k));
 
 
 			if (!olddata.getDoubleLayer()) {
@@ -10391,6 +10412,8 @@ vtkSmartPointer<vtkIdList> Methods::unionData(DataFormat &olddata, DataFormat &n
 				polydata->GetCellData()->GetArray("ThetaEndo")->InsertTuple(cellID, olddata.getVtkData()->GetCellData()->GetArray("ThetaEndo")->GetTuple(k));
 				polydata->GetCellData()->GetArray("ThetaPhiEndo")->InsertTuple(cellID, olddata.getVtkData()->GetCellData()->GetArray("ThetaPhiEndo")->GetTuple(k));
 				polydata->GetCellData()->GetArray("DifferenceVectorEndo")->InsertTuple(cellID, olddata.getVtkData()->GetCellData()->GetArray("DifferenceVectorEndo")->GetTuple(k));
+                polydata->GetCellData()->GetArray("basePathEndo")->InsertTuple(cellID, olddata.getVtkData()->GetCellData()->GetArray("basePathEndo")->GetTuple(k));
+
 			}
 		}
 
@@ -10427,6 +10450,7 @@ vtkSmartPointer<vtkIdList> Methods::unionData(DataFormat &olddata, DataFormat &n
 			polydata->GetCellData()->GetArray("Theta")->InsertComponent(newcellID, 0, 0);
 			polydata->GetCellData()->GetArray("ThetaPhi")->InsertTuple2(newcellID, 0, 0);
 			polydata->GetCellData()->GetArray("DifferenceVector")->InsertTuple3(newcellID, 0, 0, 0);
+            polydata->GetCellData()->GetArray("basePath")->InsertComponent(newcellID, 0, 0);
 			polydata->GetCellData()->GetArray("BasedPathDifferenceVector")->InsertTuple3(newcellID, 0, 0, 0);
 
 
@@ -10437,6 +10461,7 @@ vtkSmartPointer<vtkIdList> Methods::unionData(DataFormat &olddata, DataFormat &n
 				polydata->GetCellData()->GetArray("PhiEndo")->InsertComponent(newcellID, 0, 0);
 				polydata->GetCellData()->GetArray("ThetaEndo")->InsertComponent(newcellID, 0, 0);
 				polydata->GetCellData()->GetArray("ThetaPhiEndo")->InsertTuple2(newcellID, 0, 0);
+                polydata->GetCellData()->GetArray("basePathEndo")->InsertComponent(newcellID, 0, 0);
 				polydata->GetCellData()->GetArray("DifferenceVectorEndo")->InsertTuple3(newcellID, 0, 0, 0);
 			}
 		}
@@ -11628,11 +11653,13 @@ void Methods::vtpBridgeMarkerArroundPath(DataFormat &data, DataFormat &oldData, 
 			double *diffVector = oldData.getVtkData()->GetCellData()->GetArray("DifferenceVectorEndo")->GetTuple(oldPath->GetId(locatorId));
 			data.getVtkData()->GetCellData()->GetArray("DifferenceVectorEndo")->InsertTuple(cellId, diffVector);
 			data.getVtkData()->GetCellData()->GetArray("StatusEndo")->SetComponent(path->GetId(j), 0, 3);
+
 		}
 
 		double *diffVector = oldData.getVtkData()->GetCellData()->GetArray("DifferenceVector")->GetTuple(oldPath->GetId(locatorId));
 		data.getVtkData()->GetCellData()->GetArray("DifferenceVector")->InsertTuple(cellId, diffVector);
 		data.getVtkData()->GetCellData()->GetArray("Status")->SetComponent(path->GetId(j), 0, 3);
+
 	}
 } // Methods::vtpBridgeMarkerArroundPath
 
@@ -12302,7 +12329,7 @@ vtkSmartPointer<vtkIdList> Methods::growPathTransmuralEndo(DataFormat &data, vtk
 
 		vtkSmartPointer<vtkIdList> cells = getCellsinRadius(data, pillPoint1, 2 * ConfigFiberorientation::maxWitdthAtrialWall);
 
-		vtkIdType parentId = findClosedPointIdOnPath(data, pillPoint1, orgPath); // Einfügen
+		vtkIdType parentId = findClosedPointIdOnPath(data, pillPoint1, orgPath); // insert
 
 		for (vtkIdType j = 0; j < cells->GetNumberOfIds(); j++) {
 			vtkIdType currentId = cells->GetId(j);

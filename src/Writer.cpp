@@ -61,7 +61,7 @@ void UniversalWriter::write(DataFormat &data, string FullPath, bool verbose) {
 	if (FileTest) {
 		FileTest.close();
 		if (verbose) {
-			cerr << "File exisitiert bereits und wird gelöscht" << endl;
+			cerr << "File exists and will be deleted" << endl;
 		}
 		remove(filename.c_str());
 	}

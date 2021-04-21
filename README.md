@@ -182,7 +182,7 @@ RESILIENT ./example/surface_mesh/mesh_material.vtp ./example/surface_mesh/mesh_w
 RESILIENT ./example/volume_mesh/mesh_material.vtu ./example/volume_mesh/mesh_with_fiber.vtu ./example/volume_mesh/seedPoint.txt -noInitialClean
 ```
 
-## Debug and problems
+## Debuging and trouble shooting
 ### Fiber calculation
 If the fibers could not be calculated, run RESILIENT again and use the "-writeIntermediateData" flag as well as "-debug" to get additional information useful to track down the issue. In most cases, one or two points are misplaced, so the base paths run incorrectly. Find them and replace them to fix the problem. For this, there is an array "basePath" in the network file where the base paths are stored. Compare them with the following figures.
 

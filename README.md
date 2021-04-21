@@ -164,6 +164,8 @@ Some tissue classes are substituted at the end of the calculation for the simula
 |        subepi        |             99             |                   33                   |
 
 ## Example
+The example meshes provided with the program are stored using git lfs. If are not familiar with using git lfs, just download the meshes from the Gitlab website: https://github.com/KIT-IBT/RESILIENT/tree/main/example
+
 ### Example for a vtp/vtu/vtk mesh:
 If you don't know if the points are good for the mesh, it makes sense to start RESILENT with the optional Parameter:
 ```

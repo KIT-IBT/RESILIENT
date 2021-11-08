@@ -25,9 +25,6 @@ identifiers:
 license: GPL-3.0-or-later
 repository-code: https://github.com/KIT-IBT/RESILIENT
 preferred-citation:
-  title: "Software paper about My Research Software"
-  type: article
-preferred-citation:
   type: article
   doi: 10.1515/cdbme-2015-0099
   title: "Mesh structure-independent modeling of patient-specific atrial fiber orientation" 
@@ -42,7 +39,7 @@ preferred-citation:
       given-names: Olaf  
     - family-names: Seemann
       given-names: Gunnar  
- - journal: Current Directions in Biomedical Engineering
- - year: 2015
- - volume: 1
- - pages: 409-412
+ journal: Current Directions in Biomedical Engineering
+ year: 2015
+ volume: 1
+ pages: 409-412

@@ -1,32 +1,47 @@
 cff-version: 1.2.0
 title: RESILIENT
-message: >-
-  Please cite this software using the metadata from
-  'preferred-citation'.
+message: "Please cite this software using the metadata from 'preferred-citation'."
 type: software
 authors:
   - given-names: Andreas
     family-names: Wachter
     email: andreas.wachter@kit.edu
-    affiliation: Karlsruhe Institute of Technology
-    orcid: 'https://orcid.org/0000-0002-2868-6492'
+    affiliation: Karlsruhe Institute of Technology (KIT)
+    orcid: https://orcid.org/0000-0002-2868-6492
   - given-names: Luca
     family-names: Azzolin
     email: luca.azzolin@kit.edu
-    affiliation: Karlsruhe Institute of Technology
-    orcid: 'https://orcid.org/0000-0002-2919-4617'
-  - orcid: 'https://orcid.org/0000-0002-2487-4744'
-    given-names: Axel
+    affiliation: Karlsruhe Institute of Technology (KIT)
+    orcid: https://orcid.org/0000-0002-2919-4617
+  - given-names: Axel
     family-names: Loewe
     email: axel.loewe@kit.edu
     affiliation: Karlsruhe Institute of Technology (KIT)
-
+    orcid: https://orcid.org/0000-0002-2487-4744
+identifiers:
+  - description: "This is the collection of archived snapshots of all versions of RESILIENT"
+    type: doi
+    value: 10.5281/zenodo.4738368
 license: GPL-3.0-or-later
 repository-code: https://github.com/KIT-IBT/RESILIENT
 preferred-citation:
- - type: article
- - doi: 10.1515/cdbme-2015-0099
- - title: Mesh structure-independent modeling of patient-specific atrial fiber orientation
+  title: "Software paper about My Research Software"
+  type: article
+preferred-citation:
+  type: article
+   doi: 10.1515/cdbme-2015-0099
+  title: "Mesh structure-independent modeling of patient-specific atrial fiber orientation" 
+  authors:
+    - family-names: Wachter
+      given-names: Andreas
+    - family-names: Loewe
+      given-names: Axel
+    - family-names: Krueger
+      given-names: Martin W.
+    - family-names: Dössel
+      given-names: Olaf  
+    - family-names: Seemann
+      given-names: Gunnar  
  - journal: Current Directions in Biomedical Engineering
  - year: 2015
  - volume: 1

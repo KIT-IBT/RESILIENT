@@ -36,5 +36,9 @@ preferred-citation:
     - family-names: Dössel
       given-names: Olaf  
     - family-names: Seemann
-      given-names: Gunnar  
- 
+      given-names: Gunnar
+  doi: 10.1515/cdbme-2015-0099
+  journal: Current Directions in Biomedical Engineering
+  year: 2015
+  volume: 1
+  pages: 409-412

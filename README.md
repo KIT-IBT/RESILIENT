@@ -213,7 +213,7 @@ When using the example mesh (#5 in [[1](#1)], please cite:
 ```
 @article{Wachter_2015
 author = {Andreas Wachter and Axel Loewe and Martin W Krueger and Olaf Dössel and Gunnar Seemann},
-doi = {doi:10.1515/cdbme-2015-0099},
+doi = {10.1515/cdbme-2015-0099},
 url = {https://doi.org/10.1515/cdbme-2015-0099},
 title = {Mesh structure-independent modeling of patient-specific atrial fiber orientation},
 journal = {Current Directions in Biomedical Engineering},

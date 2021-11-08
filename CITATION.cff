@@ -29,7 +29,7 @@ preferred-citation:
   type: article
 preferred-citation:
   type: article
-   doi: 10.1515/cdbme-2015-0099
+  doi: 10.1515/cdbme-2015-0099
   title: "Mesh structure-independent modeling of patient-specific atrial fiber orientation" 
   authors:
     - family-names: Wachter

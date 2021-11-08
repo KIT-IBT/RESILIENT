@@ -1,6 +1,5 @@
 cff-version: 1.2.0
 title: RESILIENT
-message: "Please cite this software using the metadata from 'preferred-citation'."
 type: software
 authors:
   - given-names: Andreas
@@ -24,22 +23,3 @@ identifiers:
     value: 10.5281/zenodo.4738368
 license: GPL-3.0-or-later
 repository-code: https://github.com/KIT-IBT/RESILIENT
-preferred-citation:
-  type: article
-  doi: 10.1515/cdbme-2015-0099
-  title: "Mesh structure-independent modeling of patient-specific atrial fiber orientation" 
-  authors:
-    - family-names: Wachter
-      given-names: Andreas
-    - family-names: Loewe
-      given-names: Axel
-    - family-names: Krueger
-      given-names: Martin W.
-    - family-names: Dössel
-      given-names: Olaf  
-    - family-names: Seemann
-      given-names: Gunnar  
- journal: Current Directions in Biomedical Engineering
- year: 2015
- volume: 1
- pages: 409-412

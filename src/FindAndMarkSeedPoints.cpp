@@ -121,6 +121,7 @@ int main(int argc, char *const argv[]) {
 								point = Methods::findClosedPointinMaterial(data, point, Material::Vorhof_rechts);
 								vtkSmartPointer<vtkIdList> path = Methods::getCellsinRadius(data, data.getCentrePoints()->FindPoint(point.at(0), point.at(1), point.at(2)), 1);
 								Methods::setMaterial(data, path, Material::testMaterialRight);
+								i++;
 							}
 						}
 						if (i >= 9) {
@@ -134,11 +135,10 @@ int main(int argc, char *const argv[]) {
 								point = Methods::findClosedPointinMaterial(data, pointorg, Material::Vorhof_links_Endo);
 								vtkSmartPointer<vtkIdList> pathendo = Methods::getCellsinRadius(data, data.getCentrePoints()->FindPoint(point.at(0), point.at(1), point.at(2)), 1);
 								Methods::setMaterial(data, pathendo, Material::testMaterialLeftEndo);
+								j++;
 							}
 						}
-						j++;
 					}
-					i++;
 				}
 
 				Coordinatefile.close();

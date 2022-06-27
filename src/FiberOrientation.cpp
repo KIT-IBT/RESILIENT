@@ -435,6 +435,7 @@ void FiberOrientation::readOutFiberPoints(string FullPath) {
 							setRPoint(i, stod(CoordinatesReaded.at(2).c_str()), stod(CoordinatesReaded.at(3).c_str()), stod(CoordinatesReaded.at(4).c_str()));
 							cout << "read R" << i << " (" << getRPoint(i).at(0) << ", " << getRPoint(i).at(1) << ", " <<
 								getRPoint(i).at(2) << ") (global)" << endl;
+							i++;
 						}
 					}
 					if (i >= 9) {
@@ -442,18 +443,19 @@ void FiberOrientation::readOutFiberPoints(string FullPath) {
 							setLPointEpi(j, stod(CoordinatesReaded.at(2).c_str()), stod(CoordinatesReaded.at(3).c_str()), stod(CoordinatesReaded.at(4).c_str()));
 							cout << "read L" << j << " (" << getLPointEpi(j).at(0) << ", " << getLPointEpi(j).at(1) << ", " <<
 								getLPointEpi(j).at(2) << ") (global)" << endl;
+							j++;
 						}
-						j++;
+						
 					}
-					i++;
+					
 				}
 				else {
 					if (!NamesL[i].compare(CoordinatesReaded.at(0).c_str())) {
 						setLPointEpi(i, stod(CoordinatesReaded.at(2).c_str()), stod(CoordinatesReaded.at(3).c_str()), stod(CoordinatesReaded.at(4).c_str()));
 						cout << "read L" << i << " (" << getLPointEpi(i).at(0) << ", " << getLPointEpi(i).at(1) << ", " <<
 							getLPointEpi(i).at(2) << ") (global)" << endl;
+						i++;
 					}
-					i++;
 				}
 			}
 		}
